@@ -1,0 +1,31 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="container">
+            <h2 id="div01"></h2>
+            <p id="p01" onclick="p_click()"></p>
+            <input type="button" id="btn01" value="Clicked!" />
+ 
+        </div>
+    </body>
+    <script>
+        window.document.body.style.backgroundColor = '#fec3ab'
+
+        const h2 = document.getElementById('div01')
+        const p1 = document.getElementById('p01')
+        h2.innerText = 'Hello My Document'
+        h2.style.color = 'Red'
+        btn1 = document.getElementById('btn01')
+        btn1.addEventListener('click', (e) => {
+            p1.innerHTML = `<i> ${e} hello my event handler</i>`
+            p1.style.color = 'Green'
+        })
+        
+        function p_click(){
+            window.alert('Hello MY Window')
+        }
+
+        console.log("Hello My Console")        
+    </script>
+ </html>
